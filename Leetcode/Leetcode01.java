@@ -8,6 +8,10 @@ import java.util.Map;
  * @projectName LeetCode
  * @description: 给定一个数组和目标和，从数组中找两个数字相加等于目标和，输出这两个数字的下标
  * @date 2021/11/714:01
+ * @summary
+ * 1.数组的创建  int []ans = new int[2];
+ * 2.数组的输出方法  Arrays.toString(ans)
+ * 3.程序的优化非常重要
  */
 public class Leetcode01 {
 //1.双重for循环获取数组下标的值
@@ -33,7 +37,6 @@ public class Leetcode01 {
             if (map.containsKey(sub)){
                 return new int[]{i,map.get(sub)};
             }
-
         }
         throw new IllegalArgumentException("no two sum solution");
     }
